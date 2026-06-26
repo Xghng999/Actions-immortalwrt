@@ -16,6 +16,6 @@
 # 3. (可选) 添加其他常用的依赖源，确保编译不报错
 # echo "src-git helloworld https://github.com/fw876/helloworld.git" >> "feeds.conf.default"
 # echo 'src-git packages https://github.com/immortalwrt/packages.git' >>feeds.conf.default
-sed -i '$a src-git smpackage https://github.com/kenzok8/small-package' feeds.conf.default
+# sed -i '$a src-git smpackage https://github.com/kenzok8/small-package' feeds.conf.default
 # 克隆源码
-git clone https://github.com/luowei729/OpenWrt-IPThrottle.git
+# git clone https://github.com/luowei729/OpenWrt-IPThrottle.git
