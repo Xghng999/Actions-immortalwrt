@@ -19,7 +19,3 @@
 sed -i '$a src-git smpackage https://github.com/kenzok8/small-package' feeds.conf.default
 # 克隆源码
 git clone https://github.com/luowei729/OpenWrt-IPThrottle.git
-# 进入目录
-cd OpenWrt-IPThrottle
-# 编译（需要 OpenWrt SDK 环境）
-make package/ipthrottle/compile V=s
