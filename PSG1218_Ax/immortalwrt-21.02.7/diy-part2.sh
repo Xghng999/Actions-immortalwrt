@@ -9,7 +9,7 @@
 #sed -i "s/OpenWrt/PSG1218/g" package/base-files/files/bin/config_generate
 
 # 修改设置lan ip
-sed -i 's/192.168.1.1/192.168.5.222/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.128.1/g' package/base-files/files/bin/config_generate
 
 # 修改版本号
 # sed -i 's/OpenWrt/Leopard build $(date "+%Y.%m.%d") @ OpenWrt/g' package/default-settings/files/zzz-default-settings
