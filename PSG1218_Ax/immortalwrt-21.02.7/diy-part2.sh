@@ -1,23 +1,21 @@
 #!/bin/bash
-#=============================================================
-# https://github.com/P3TERX/Actions-OpenWrt
-# File name: diy-part1.sh
-# Description: OpenWrt DIY script part 1 (Before Update feeds)
+#=================================================
+# Description: DIY script
 # Lisence: MIT
 # Author: P3TERX
 # Blog: https://p3terx.com
-#=============================================================
+#=================================================
+# 修改机器名称
+#sed -i "s/OpenWrt/PSG1218/g" package/base-files/files/bin/config_generate
 
-# Uncomment a feed source
-#sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
+# 修改设置lan ip
+sed -i 's/192.168.1.1/192.168.5.222/g' package/base-files/files/bin/config_generate
 
-# Add a feed source
-#sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
-#sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
-#sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
+# 修改版本号
+# sed -i 's/OpenWrt/Leopard build $(date "+%Y.%m.%d") @ OpenWrt/g' package/default-settings/files/zzz-default-settings
 
-# 添加 Package
-#git clone https://github.com/fw876/helloworld.git                                   package/molun/luci-app-ssr-plus
-#git clone https://github.com/rufengsuixing/luci-app-adguardhome.git                 package/molun/luci-app-adguardhome
-#git clone https://github.com/vernesong/OpenClash.git                                package/molun/luci-app-openclash
-#git clone https://github.com/Joelyi/luci-app-ssr-plus.git                            package/Joelyi/luci-app-ssr-plus
+# 添加新的主题包
+# git clone https://github.com/Leo-Jo-My/luci-theme-opentomcat.git package/lean/luci-theme-opentomcat
+
+# 去除默认主题
+sed -i '/set luci.main.mediaurlbase=\/luci-static\/bootstrap/d' feeds/luci/themes/luci-theme-bootstrap/root/etc/uci-defaults/30_luci-theme-bootstrap
