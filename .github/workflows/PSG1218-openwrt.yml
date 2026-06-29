@@ -21,9 +21,9 @@ env:
   REPO_BRANCH: v17.01.0
   # REPO_BRANCH: openwrt-LED v17.01.0
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: xiaomi_mini/immortalwrt-23.05/.config
-  DIY_P1_SH: xiaomi_mini/immortalwrt-23.05/diy-part1.sh
-  DIY_P2_SH: xiaomi_mini/immortalwrt-23.05/diy-part2.sh
+  CONFIG_FILE: PSG1218_Ax/immortalwrt-21.02.7/.config
+  DIY_P1_SH: PSG1218_Ax/immortalwrt-21.02.7/diy-part1.sh
+  DIY_P2_SH: PSG1218_Ax/immortalwrt-21.02.7/diy-part2.sh
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_RELEASE: true
