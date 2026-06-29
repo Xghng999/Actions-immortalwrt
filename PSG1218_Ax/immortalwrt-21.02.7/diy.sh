@@ -5,6 +5,9 @@
 # Author: P3TERX
 # Blog: https://p3terx.com
 #=================================================
+# 修改机器名称
+#sed -i "s/OpenWrt/PSG1218/g" package/base-files/files/bin/config_generate
+
 # 修改默认IP
 sed -i 's/192.168.1.1/192.168.5.222/g' package/base-files/files/bin/config_generate
 
